@@ -1,17 +1,18 @@
 function isPrime(num){
+let factors=0;
  for(let x=1;x<=num;x++){
- if(num%x){
-factor++;
+ if(num%x==0){
+factors++;
 }
 }
-if(factor>2){
+if(factors==2){
 return true;
 }else{
 return false;
 }}
- let ans=isPrime(17);
-if(ans==true){
-console.log("true");
+ let answer=isPrime(17);
+if(answer==true){
+console.log("Prime number");
 }else{
-console.log("false");
+console.log("Not a prime number");
 }
